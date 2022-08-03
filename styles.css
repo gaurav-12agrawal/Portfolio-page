@@ -1,0 +1,935 @@
+body {
+    background-color: #EBECF0;
+}
+
+.background {
+    color: white;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.first-div {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
+}
+
+.navbar-brand {
+    font-family: "Heebo";
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+.icon-image {
+    margin-right: 2%;
+    height: 50px;
+    width: 50px;
+
+}
+
+.nav-fcolor {
+    color: black;
+    margin-top: -4px;
+}
+
+.nav-fcolor:hover {
+    color: black;
+}
+
+.nav-link {
+
+    margin-left: 40px;
+    margin-right: 20px;
+    font-family: "karla";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-chat {
+    cursor: pointer;
+
+    height: 25px;
+    width: 70px;
+    margin-top: 5px;
+    background-color: #1cb889;
+    color: #fff;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 30px;
+    border: none;
+    font-family: Bebas Neue;
+
+}
+
+.btn-nav-item {
+    margin-left: 20px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: black
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1cb889;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.main-page {
+    width: 100%;
+    height: 670px;
+
+    display: flex;
+}
+
+.leftp {
+    width: 70%;
+}
+
+.rightp {
+    width: 30%;
+}
+
+
+h6 {
+    margin-top: 150px;
+    color: #FF5733;
+
+}
+
+h1 {
+    font-family: Varela Round;
+    text-align: center;
+    color: white;
+}
+
+.text-main {
+    text-align: center;
+    color: #1cb889;
+    font-family: Noto Sans;
+
+}
+
+h5 {
+    margin-top: 20px;
+    padding-left: 150px;
+    font-size: 20px;
+    width: 80%;
+    color: white;
+
+}
+
+.change-color {
+    color: white;
+}
+
+
+.bitmoji {
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    margin-left: -50px;
+    margin-top: 150px;
+    background-color: transparent;
+}
+
+.btn1 {
+    margin-left: 30%;
+    width: 120px;
+    background-color: #1cb889;
+    color: white;
+    border: none;
+}
+
+.btn2 {
+    background-color: white;
+    width: 120px;
+    margin-left: 5%;
+    border: none;
+}
+
+.btn1:hover {
+    color: black;
+    background-color: white;
+}
+
+.btn2:hover {
+    color: white;
+    background-color: #1cb889;
+}
+
+.btc {
+    border-radius: 5px;
+    margin-top: 30px;
+    font-family: Bebas Neue;
+
+    cursor: pointer;
+}
+
+
+.wrap {
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+.wrap:hover {
+    text-decoration: underline black;
+}
+
+.clubsh1 {
+
+    padding-top: 70px;
+    padding-right: 60%;
+    font-size: 60px;
+    font-family: sans-serif;
+}
+
+
+.pressed {
+    box-shadow: 2px 1px 2px 1px rgba(1, 1, 1, 1);
+    opacity: 1;
+
+}
+
+#clubs {
+    width: 100%;
+    height: 500px;
+    background-image: url("images/Visiwig-Bricks\ \(1\).svg");
+}
+
+.maindiv-clubs {
+    display: flex;
+    width: 100%;
+}
+
+.leftclub {
+    padding-top: 0;
+    width: 33%;
+    padding-left: 140px;
+    background-color: #fff;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+}
+
+.rightclub {
+    width: 50%;
+}
+
+.clublink {
+    color: black;
+    background-color: transparent;
+    margin-top: 5px;
+    font-family: Bebas Neue;
+    font-size: 30px;
+}
+
+.clublink:hover {
+    text-decoration: none;
+}
+
+.d-block {
+    margin-left: 220px;
+    width: 200px;
+    height: 140px;
+    margin-bottom: 70px;
+}
+
+.slidebar {
+    margin-top: 100px
+}
+
+#footer {
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    border-bottom: 0px;
+}
+
+.social-icons {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border-width: 0.3px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.social-icons:hover {
+    font-size: 20px;
+    color: white;
+    background-color: #1cb889;
+    box-shadow: 1px;
+    opacity: 0.8;
+}
+
+.cont {
+    font-family: Cairo;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.myname {
+    font-family: Cairo;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(46, 46, 46);
+}
+
+
+.mainskill {
+    display: flex;
+    flex-direction: initial;
+    padding-top: 50px;
+}
+
+.heading-liner {
+    background-color: #1cb889;
+    width: 12%;
+    height: 2px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.skill-heading {
+    font-family: sans-serif;
+    margin-left: 100px;
+    font-weight: bolder;
+    color: #1cb889;
+    padding-right: 22%;
+}
+
+.skillmain {
+    width: 100%;
+    display: flex;
+}
+
+.leftskill {
+    width: 40%;
+}
+
+.rightskill {
+    width: 60%;
+}
+
+.skill-number {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 100px;
+    font-family: "Exo 2";
+    font-weight: bold;
+}
+
+strong {
+
+    font-size: 25px;
+    margin-left: 100px;
+
+}
+
+/* for animated line */
+.complete-per {
+    margin-top: 25px;
+    display: flex;
+
+    height: 0px;
+    width: 1px;
+    border-bottom: 16px solid black;
+
+    -webkit-animation: increase 2s;
+    -moz-animation: increase 2s;
+    -o-animation: increase 2s;
+    animation: increase 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase {
+
+    100% {
+        width: 20rem;
+    }
+}
+
+
+.ga0 {
+    margin-top: 75px;
+    margin-bottom: 10px;
+    height: 0px;
+    width: 1px;
+    border-bottom: 8px solid #1cb889;
+
+    -webkit-animation: increase0 2s;
+    -moz-animation: increase0 2s;
+    -o-animation: increase0 2s;
+    animation: increase0 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase0 {
+
+    100% {
+        width: 18rem;
+    }
+}
+
+.ga1 {
+    margin-bottom: 10px;
+    margin-top: 55px;
+    height: 0px;
+    width: 1px;
+    border-bottom: 8px solid #1cb889;
+
+    -webkit-animation: increase1 2s;
+    -moz-animation: increase1 2s;
+    -o-animation: increase1 2s;
+    animation: increase1 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase1 {
+
+    100% {
+        width: 14rem;
+    }
+}
+
+.ga2 {
+    margin-bottom: 10px;
+    margin-top: 55px;
+    height: 0px;
+    width: 1px;
+    border-bottom: 8px solid #1cb889;
+
+    -webkit-animation: increase2 2s;
+    -moz-animation: increase2 2s;
+    -o-animation: increase2 2s;
+    animation: increase2 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase2 {
+
+    100% {
+        width: 10rem;
+    }
+}
+
+.ga3 {
+    margin-bottom: 10px;
+    margin-top: 55px;
+    height: 0px;
+    width: 1px;
+    border-bottom: 8px solid #1cb889;
+
+    -webkit-animation: increase3 2s;
+    -moz-animation: increase3 2s;
+    -o-animation: increase3 2s;
+    animation: increase3 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase3 {
+
+    100% {
+        width: 8rem;
+    }
+}
+
+.ga4 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    height: 0px;
+    width: 1px;
+    border-bottom: 8px solid #1cb889;
+
+    -webkit-animation: increase4 2s;
+    -moz-animation: increase4 2s;
+    -o-animation: increase4 2s;
+    animation: increase4 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase4 {
+
+    100% {
+        width: 18.4rem;
+    }
+}
+
+.ga5 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    height: 0px;
+    width: 1px;
+    border-bottom: 8px solid #1cb889;
+
+    -webkit-animation: increase5 2s;
+    -moz-animation: increase5 2s;
+    -o-animation: increase5 2s;
+    animation: increase5 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase5 {
+
+    100% {
+        width: 14rem;
+    }
+}
+
+.ga6 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    height: 0px;
+    width: 1px;
+    border-bottom: 8px solid #1cb889;
+    -webkit-animation: increase6 2s;
+    -moz-animation: increase6 2s;
+    -o-animation: increase6 2s;
+    animation: increase6 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes increase6 {
+
+    100% {
+        width: 12rem;
+    }
+}
+
+#about {
+    height: 600px;
+    background-color: #EBECF0;
+}
+
+.my-image {
+    height: 250px;
+    width: 200px;
+    border-radius: 15px;
+    border-style: solid;
+    border: 6px, #1cb889;
+    margin-bottom: 40px;
+    margin-left: 50px;
+
+}
+
+.main-about {
+    display: flex;
+}
+
+.leftabout {
+    width: 30%;
+    text-align: center;
+    padding-top: 80px;
+    padding-right: 50px;
+
+}
+
+.rightabout {
+    width: 70%;
+    display: flex;
+    flex-direction: end;
+}
+
+.about-heading {
+    display: flex;
+    flex-direction: initial;
+    padding-top: 30px;
+    margin-left: 100px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #1cb889;
+}
+
+.lnmiit-logo {
+    margin-left: 200px;
+
+}
+
+.first {
+    margin-left: 50px;
+    padding-top: 30px;
+    width: 50%;
+    color: rgb(50, 50, 50);
+}
+
+.second {
+    width: 70%;
+    padding-top: 50px;
+
+
+}
+
+.about-name {
+    margin-top: 50px;
+    font-family: "Inter";
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+span {
+    font-family: sans-serif;
+}
+
+.descr {
+    font-family: "Exo 2";
+    font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #25efb2;
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1cb889;
+}
+
+.dotted-hr {
+    border: dotted rgb(70, 70, 70) 6px;
+    border-bottom: none;
+    width: 10%;
+    margin-left: 45%;
+    margin-top: 50px;
+    ;
+}
+
+.interestmain {
+    margin-top: 0px;
+    display: flex;
+    width: 100%;
+    height: 350px;
+}
+
+.leftiterest {
+    width: 30%;
+    margin-left: 8%;
+    height: 270px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-width: thick;
+    border-color: #1cb889;
+
+
+}
+
+.rightiterest {
+    width: 40%;
+    padding-top: -30px;
+    padding-left: 16%;
+
+}
+
+.interest-tag {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px;
+    font-family: "Exo 2";
+    font-weight: bold;
+}
+
+.interest-tag:hover {
+    color: white;
+    background-color: #1cb889;
+    cursor: pointer;
+}
+
+.interesthead {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: initial;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    color: #1cb889;
+
+}
+
+.interest-image {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.fill-color {
+    background-color: #1cb889;
+    color: white;
+}
+
+.p1 {
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding-left: 43.5%;
+}
+
+.p2 {
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding-left: 39.5%;
+}
+
+.p3 {
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding-left: 38%;
+}
+
+.p4 {
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding-left: 35.5%;
+}
+
+.p5 {
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding-left: 38%;
+}
+
+.p6 {
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding-left: 39.5%;
+}
+
+.p7 {
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding-left: 31%;
+}
+
+@media (max-width:1056px) {
+    .skill-heading {
+        padding-right: 13.5%;
+    }
+
+    .first {
+        margin-left: 30%;
+    }
+
+    .second {
+        display: none;
+    }
+}
+
+@media(max-width:900px) {
+    .rightp {
+        display: none;
+    }
+
+    .text-main {
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .leftp {
+        width: 100%;
+    }
+
+    .main-page {
+
+        flex-direction: column;
+    }
+
+    h5 {
+        margin-left: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .btn2 {
+        margin-left: 113px;
+    }
+
+    .interestmain {
+        flex-direction: column;
+        height: 700px;
+
+    }
+
+    .leftiterest {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        height: 200px;
+        width: 370px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+
+
+
+    }
+
+    .rightiterest {
+        width: 100%;
+        padding-right: 30%;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .interesthead {
+        padding-top: 50px;
+        width: 370px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+
+    #about {
+        height: 1000px;
+    }
+
+    .main-about {
+
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .about-heading {
+        padding-top: 50px;
+        width: 350px;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .leftabout {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        height: 200px;
+        width: 370px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    .first {
+        width: 100%;
+    }
+
+    .rightabout {
+        width: 100%;
+        padding-right: 20%;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hori {
+        width: 200px;
+    }
+
+    .maindiv-clubs {
+        flex-direction: column;
+    }
+
+    #clubs {
+        height: 600px;
+    }
+
+    .leftclub {
+        height: 200px;
+        width: 350px;
+        padding-right: 100px;
+    }
+
+    .rightclub {
+        margin-top: 50px;
+        height: 150px;
+        width: 330px;
+    }
+
+    .clubsh1 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 25%;
+        margin: auto;
+    }
+
+    .d-block {
+        margin-left: 80px;
+        width: 200px;
+        height: 140px;
+        margin-bottom: 50px;
+    }
+
+    .complete-per {
+        display: none;
+    }
+
+    .skillmain {
+        flex-direction: column;
+    }
+
+    .rightskill {
+        padding-left: 10px;
+
+    }
+
+    .clublink {
+        width: 200px;
+        padding-right: 20px;
+    }
+  .leftskill{
+    width: 350px;
+  }
+
+}
