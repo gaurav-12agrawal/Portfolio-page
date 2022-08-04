@@ -14,6 +14,7 @@ body {
 
 .first-div {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
+   object-fit: cover;
 }
 
 .navbar-brand {
@@ -95,7 +96,7 @@ body {
 
 .main-page {
     width: 100%;
-    height: 670px;
+    height: 600px;
 
     display: flex;
 }
@@ -180,7 +181,8 @@ h5 {
     border-radius: 5px;
     margin-top: 30px;
     font-family: Bebas Neue;
-
+   width: 130px;
+   height: 40px;
     cursor: pointer;
 }
 
@@ -403,7 +405,7 @@ strong {
 @keyframes increase0 {
 
     100% {
-        width: 18rem;
+        width: 17rem;
     }
 }
 
@@ -487,7 +489,7 @@ strong {
 @keyframes increase4 {
 
     100% {
-        width: 18.4rem;
+        width: 17.4rem;
     }
 }
 
@@ -790,9 +792,9 @@ span {
     }
 
     .btn2 {
-        margin-left: 113px;
+        margin-left: 115px;
     }
-
+   
     .interestmain {
         flex-direction: column;
         height: 700px;
