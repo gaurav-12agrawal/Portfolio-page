@@ -47,10 +47,10 @@
 </head>
 
 <body>
-    <div class="first-div">
+    <div class="first-div" id="home">
         <!-- Nav Bar -->
         <section id="navigation">
-            <nav class="navbar navbar-expand-lg  background  navbar-dark ">
+            <nav class="navbar navbar-expand-lg  background  navbar-dark sticky-top ">
                 <button class="navbar-toggler  toggler-example" type="button" data-toggle="collapse"
                     data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -60,6 +60,11 @@
                 <a class="navbar-brand nav-fcolor hover-underline-animation" href="index.html">PORTFOLIO</a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-fcolor hover-underline-animation fill-line-animation"
+                                href="#home">HOME</a>
+
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link nav-fcolor hover-underline-animation fill-line-animation"
                                 href="#skills">Skills</a>
@@ -96,6 +101,13 @@
         </section>
         <!-- main-page -->
         <section>
+            
+                <button class="change-color-button b1"></button>
+                <button class="change-color-button b2"></button>
+                <button class="change-color-button b3"></button>
+                <button class="change-color-button b4"></button>
+                
+           
             <div class="main-page">
                 <div class="leftp">
                     <h6 class="text-main">Hello there,</h6>
@@ -123,7 +135,7 @@
         <h1 class="skill-heading">SKILLS</h1>
         <div class="skillmain">
             <div class="leftskill">
-                <strong class="skill-n">Languages</strong> 
+                <strong class="skill-n">Languages</strong>
                 <br><br>
                 <span class="skill-number">1. C </span> <span class=" p1 p"> 90%</span> <br><br>
                 <span class="skill-number">2. C++ </span> <span class=" p2 p">70%</span>
@@ -134,7 +146,7 @@
                 <br><br>
                 <span class="skill-number">5. Html</span> <span class="p5 p">92%</span>
                 <br><br>
-                <span class="skill-number">6.     Css</span> <span class=" p6 p">70%</span>
+                <span class="skill-number">6. Css</span> <span class=" p6 p">70%</span>
                 <br><br>
                 <span class="skill-number">7. Javascript</span><span class="p7 p">60%</span>
             </div>
@@ -233,11 +245,8 @@
             </div>
             <div class="rightclub">
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators slidebar">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    </ol>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
+
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block " src="images/gdscimg.png" alt="First slide">
