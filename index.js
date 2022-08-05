@@ -52,7 +52,7 @@ window.onload = function () {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #1cb889}";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid var(--orang)}";
   document.body.appendChild(css);
 };
 document.querySelector(".btn-chat").addEventListener("click", function () {
@@ -73,3 +73,31 @@ document.querySelector(".btn2").addEventListener("click", function () {
     activeButton.classList.remove("pressed");
   }, 300);
 })
+
+document.querySelector(".b1").addEventListener("click", function () {
+  var r = document.querySelector(':root');
+  var rs = getComputedStyle(r);
+  alert("Are you sure to change this color to ORANGE");
+  
+  r.style.setProperty('--orang', '#FF5733');
+})
+document.querySelector(".b2").addEventListener("click", function () {
+  var r1 = document.querySelector(':root');
+  var rs1 = getComputedStyle(r1);
+  alert("Are you sure to change this color to GREEN");
+  r1.style.setProperty('--orang', '#1cb889');
+})
+document.querySelector(".b3").addEventListener("click", function () {
+  var r3 = document.querySelector(':root');
+  var rs3 = getComputedStyle(r3);
+  alert("Are you sure to change this color to RED");
+  r3.style.setProperty('--orang', '#b30000');
+})
+
+document.querySelector(".b4").addEventListener("click", function () {
+ 
+  alert("Change theme");
+  document.querySelector(".b4").classList.add(".b5");
+ 
+})
+
