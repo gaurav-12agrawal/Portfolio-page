@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+
+}
+:root {
+    --orang:#FF5733 ;
+    --green:#1cb889;
+  }
 body {
     background-color: black;
 }
@@ -16,7 +24,9 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
     object-fit: cover;
 }
-
+.navbar{
+    width: 100%;
+}
 .navbar-brand {
     font-family: "Heebo";
     font-weight: bolder;
@@ -50,20 +60,24 @@ body {
 
 .btn-chat {
     cursor: pointer;
-
     height: 25px;
     width: 70px;
     margin-top: 5px;
-    background-color: #1cb889;
+    background-color: var(--var) ;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 2px;
     justify-content: center;
     text-align: center;
     margin-right: 50px;
     margin-left: 30px;
     border: none;
     font-family: Bebas Neue;
+    transition: all 500ms ease-out 1ms;
+}
 
+.btn-chat:hover {
+    color: var(--orang) ;
+    background-color: #fff;
 }
 
 .btn-nav-item {
@@ -84,7 +98,7 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #1cb889;
+    background-color: var(--orang) ;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -107,11 +121,54 @@ body {
 
 .rightp {
     width: 30%;
+    margin-top: -15%;
+}
+
+.change-color-button{
+    margin-top: 100px;
+    margin-left: 19px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+   
+}
+.change-mood{
+
+    width: 100%;
 }
 
 
+.b1{
+    background-color: #FF5733;
+    box-shadow: 2px 2px 2px 2px #ff8b8b;
+
+}
+.b2{
+    background-color: #1cb889;
+    box-shadow: 2px 2px 2px 2px #8dffdd;
+}
+.b3{
+    background-color: #b30000;
+    box-shadow: 2px 2px 2px 2px #ff8da6;
+}
+.b4{
+    height: 27px;
+    width: 27px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px #484848;
+}
+.b5{
+    height: 27px;
+    width: 27px;
+    color: black;
+    background-color: black;
+    box-shadow: 2px 2px 2px 2px rgb(169, 169, 169);
+}
 h6 {
-    margin-top: 15%;
+    margin-top: 5%;
 
 
 }
@@ -124,7 +181,7 @@ h1 {
 
 .text-main {
     text-align: center;
-    color: #1cb889;
+    color: var(--orang) ;
     font-family: Noto Sans;
 
 }
@@ -152,33 +209,47 @@ h5 {
     background-color: transparent;
 }
 
+.sticky-top {
+    position: fixed;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
 .btn1 {
     margin-left: 30%;
     width: 120px;
-    background-color: #1cb889;
+    background-color: transparent;
     color: white;
     border: none;
+    transition: all 600ms ease-in 0ms;
+    border-style: solid;
+    border-color: white;
 }
 
 .btn2 {
-    background-color: white;
+    background-color: transparent;
+    color: var(--orang) ;
     width: 120px;
     margin-left: 5%;
     border: none;
+    border-style: solid;
+    border-color: var(--orang) ;
+    transition: all 600ms ease-out 0ms;
+
 }
 
 .btn1:hover {
-    color: black;
+    color: var(--orang) ;
     background-color: white;
 }
 
 .btn2:hover {
     color: white;
-    background-color: #1cb889;
+    background-color: var(--orang) ;
 }
 
 .btc {
-    border-radius: 5px;
+
     margin-top: 30px;
     font-family: Bebas Neue;
     width: 7rem;
@@ -221,9 +292,11 @@ h5 {
     background-size: cover;
     background-blend-mode: darken;
 }
-.g{
+
+.g {
     margin-left: 10px;
 }
+
 .clubhead {
 
     width: 250px;
@@ -236,11 +309,31 @@ h5 {
     justify-content: center;
     font-family: sans-serif;
     font-weight: bolder;
-    color: #1cb889;
+    color: var(--orang) ;
     background-color: black;
     border-radius: 6px;
+    transition: all 1s ease-in-out;
 
+}
 
+.clubhead:hover {
+    background-color: var(--orang) ;
+    color: black;
+}
+
+.interesthead:hover {
+    background-color: var(--orang) ;
+    color: black;
+}
+
+.skill-heading:hover {
+    background-color: var(--orang) ;
+    color: black;
+}
+
+.about-heading:hover {
+    background-color: var(--orang) ;
+    color: black;
 }
 
 .maindiv-clubs {
@@ -257,7 +350,7 @@ h5 {
     margin-left: 10%;
     color: white;
     border-radius: 12px;
-    
+
 
 }
 
@@ -282,6 +375,7 @@ h5 {
 }
 
 .clublink {
+    transition: all 1s ease-in-out;
     color: white;
     background-color: transparent;
     margin-top: 5px;
@@ -293,7 +387,7 @@ h5 {
 
 .clublink:hover {
     text-decoration: none;
-    color: #1cb889;
+    color: var(--orang) ;
     width: 150px;
 }
 
@@ -311,7 +405,7 @@ h5 {
 #footer {
 
     background-color: rgba(0, 0, 0, 0.8);
-    margin-top: 100px;
+    margin-top:0;
     text-align: center;
     justify-content: center;
     padding-top: 50px;
@@ -333,23 +427,25 @@ h5 {
     border-width: 0.3px;
     border-style: solid;
     border-color: black;
+    transition: all 500ms ease-in 1ms;
 
 
 }
 
 .social-icons:hover {
-    font-size: 20px;
+    font-size: 22px;
     color: white;
-    background-color: #1cb889;
+    background-color: var(--orang) ;
     box-shadow: 1px;
     opacity: 0.8;
 }
 
 .cont {
+  
     font-family: Cairo;
     font-size: 20px;
     font-weight: bolder;
-    color: white;
+    color: var(--orang) ;
 }
 
 .myname {
@@ -379,7 +475,7 @@ h5 {
 }
 
 .heading-liner {
-    background-color: #1cb889;
+    background-color: var(--orang) ;
     width: 12%;
     height: 2px;
     margin-left: 20px;
@@ -387,6 +483,7 @@ h5 {
 }
 
 .skill-heading {
+    transition: all 1s ease-in-out;
     width: 250px;
     display: flex;
     flex-direction: initial;
@@ -397,7 +494,7 @@ h5 {
     justify-content: center;
     font-family: sans-serif;
     font-weight: bolder;
-    color: #1cb889;
+    color: var(--orang) ;
     background-color: black;
     border-radius: 6px;
 }
@@ -458,7 +555,7 @@ strong {
     margin-bottom: 10px;
     height: 0px;
     width: 1px;
-    border-bottom: 8px solid #1cb889;
+    border-bottom: 8px solid var(--orang) ;
 
     -webkit-animation: increase0 2s;
     -moz-animation: increase0 2s;
@@ -479,7 +576,7 @@ strong {
     margin-top: 55px;
     height: 0px;
     width: 1px;
-    border-bottom: 8px solid #1cb889;
+    border-bottom: 8px solid var(--orang) ;
 
     -webkit-animation: increase1 2s;
     -moz-animation: increase1 2s;
@@ -500,7 +597,7 @@ strong {
     margin-top: 55px;
     height: 0px;
     width: 1px;
-    border-bottom: 8px solid #1cb889;
+    border-bottom: 8px solid var(--orang) ;
 
     -webkit-animation: increase2 2s;
     -moz-animation: increase2 2s;
@@ -521,7 +618,7 @@ strong {
     margin-top: 55px;
     height: 0px;
     width: 1px;
-    border-bottom: 8px solid #1cb889;
+    border-bottom: 8px solid var(--orang) ;
 
     -webkit-animation: increase3 2s;
     -moz-animation: increase3 2s;
@@ -542,7 +639,7 @@ strong {
     margin-top: 50px;
     height: 0px;
     width: 1px;
-    border-bottom: 8px solid #1cb889;
+    border-bottom: 8px solid var(--orang) ;
 
     -webkit-animation: increase4 2s;
     -moz-animation: increase4 2s;
@@ -563,7 +660,7 @@ strong {
     margin-top: 50px;
     height: 0px;
     width: 1px;
-    border-bottom: 8px solid #1cb889;
+    border-bottom: 8px solid var(--orang) ;
 
     -webkit-animation: increase5 2s;
     -moz-animation: increase5 2s;
@@ -584,7 +681,7 @@ strong {
     margin-top: 50px;
     height: 0px;
     width: 1px;
-    border-bottom: 8px solid #1cb889;
+    border-bottom: 8px solid var(--orang) ;
     -webkit-animation: increase6 2s;
     -moz-animation: increase6 2s;
     -o-animation: increase6 2s;
@@ -609,7 +706,7 @@ strong {
     width: 200px;
     border-radius: 15px;
     border-style: solid;
-    border: 6px, #1cb889;
+    border: 6px, var(--orang) ;
     margin-bottom: 40px;
     margin-left: 50px;
 
@@ -648,6 +745,7 @@ strong {
 }
 
 .about-heading {
+    transition: all 1s ease-in-out;
     width: 250px;
     display: flex;
     flex-direction: initial;
@@ -658,7 +756,7 @@ strong {
     justify-content: center;
     font-family: sans-serif;
     font-weight: bolder;
-    color: #1cb889;
+    color: var(--orang) ;
     background-color: black;
     border-radius: 6px;
 }
@@ -712,13 +810,13 @@ span {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #25efb2;
+    background:white;
     border-radius: 20px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #1cb889;
+    background: var(--orang) ;
 }
 
 .dotted-hr {
@@ -798,9 +896,10 @@ span {
     justify-content: center;
     font-family: sans-serif;
     font-weight: bolder;
-    color: #1cb889;
+    color: var(--orang) ;
     background-color: black;
     border-radius: 6px;
+    transition: all 1s ease-in-out;
 
 }
 
@@ -812,7 +911,7 @@ span {
 }
 
 .fill-color {
-    background-color: #1cb889;
+    background-color: var(--orang) ;
     color: white;
 }
 
@@ -878,7 +977,7 @@ span {
     }
 
     h6 {
-        margin-top: 0%;
+        margin-top: 10%;
     }
 
     .bitmoji {
@@ -889,12 +988,13 @@ span {
     .btn2 {
         margin-left: 30%;
     }
-    .rightp{
+
+    .rightp {
         margin: auto;
         margin-left: 30%;
         justify-content: center;
         align-items: center;
-       
+
     }
 
     .skillmain {
@@ -915,77 +1015,103 @@ span {
         margin-left: 0%;
         margin-right: 2%;
     }
-    #clubs{
-        height: 550px;
+
+    #clubs {
+        height: 450px;
         margin-bottom: 50px;
     }
-    .maindiv-clubs{
+
+    .maindiv-clubs {
         flex-direction: column;
-       height: 400px;
+        height: 320px;
         margin-bottom: 100px;
     }
-    
-    .leftclub{
+
+    .leftclub {
         width: 100%;
     }
-    .rightclub{
-        margin-top:0px;
+
+    .rightclub {
+        margin-top: 20px;
         width: 100%;
     }
-    .second{
-        display:none;
+
+    .second {
+        display: none;
         width: 0%;
         visibility: hidden;
     }
-    #about{
+
+    #about {
         margin-bottom: 100px;
-        height: 800px;
+        height: 750px;
     }
-    .main-about{
+
+    .main-about {
         flex-direction: column;
-         height: 700px;
-        margin-bottom: 50px;
+        height: 710px;
+        margin-bottom: 40px;
     }
-    .leftabout{
+
+    .leftabout {
         width: 100%;
-        padding-top: 20px;
+        margin-top: -10px;
         
+
     }
-  
-    .rightabout{
+
+    .rightabout {
         width: 100%;
         margin-left: 0;
+        padding-top: 0px;
     }
-    .first{
+
+    .first {
         width: 100%;
         text-align: center;
         margin: auto;
         padding-left: 0;
     }
-    .my-image{
+
+    .my-image {
         margin-left: 0;
     }
-    .interestmain{
+
+    .interestmain {
         height: 650px;
         flex-direction: column;
     }
-    .leftiterest{
+
+    .leftiterest {
         width: 100%;
         font-size: 20px;
+       
     }
-    .rightiterest{
+
+    .rightiterest {
         width: 100%;
         padding-left: 10%;
-        margin-top: -90px;
+      
     }
-   .interest-tag{
-    font-size: 18px;
-
+   .about-name{
+    margin-top: 0px;
    }
-}
-@media (max-width:510px){
+    .interest-tag {
+        font-size: 18px;
 
-.main-page{
-    height: 900px;
+    }
+    .btn-chat{
+        margin-left: 15px;
+    }
+}
+
+@media (max-width:510px) {
+
+    .main-page {
+        height: 1000px;
+        margin-bottom: 30px;
+    }
+.bitmoji{
+    padding-right: 50%;
 }
 }
