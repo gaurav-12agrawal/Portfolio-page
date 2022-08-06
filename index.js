@@ -1,4 +1,10 @@
+var preloder= document.querySelector(".preloader");
+window.addEventListener("load",vanish);
+function vanish(){
+  preloder.classList.add("disppear");
+}
 //made by vipul mirajkar thevipulm.appspot.com
+
 var TxtType = function (el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -73,12 +79,22 @@ document.querySelector(".btn2").addEventListener("click", function () {
     activeButton.classList.remove("pressed");
   }, 300);
 })
+document.querySelector(".btn1").addEventListener("click", function () {
+
+  location.href = "#skills";
+  var activeButton1 = document.querySelector("." + "btn1");
+  activeButton1.classList.add("pressed");
+
+  setTimeout(function () {
+    activeButton1.classList.remove("pressed");
+  }, 300);
+})
 
 document.querySelector(".b1").addEventListener("click", function () {
   var r = document.querySelector(':root');
   var rs = getComputedStyle(r);
   alert("Are you sure to change this color to ORANGE");
-  
+
   r.style.setProperty('--orang', '#FF5733');
 })
 document.querySelector(".b2").addEventListener("click", function () {
@@ -94,10 +110,28 @@ document.querySelector(".b3").addEventListener("click", function () {
   r3.style.setProperty('--orang', '#b30000');
 })
 
+
 document.querySelector(".b4").addEventListener("click", function () {
+  var activeButton2 = document.querySelector("." + "b4");
+  activeButton2.classList.toggle("b5");
+  document.querySelector("." + "boy").classList.toggle("change-background");
+  document.querySelector("." + "maindiv-clubs").classList.toggle("change-background2");
+  document.querySelector("." + "skillmain ").classList.toggle("change-background2");
+  document.querySelector("." + "main-about").classList.toggle("change-background2");
+  document.querySelector("." + "interestmain").classList.toggle("change-background2");
  
-  alert("Change theme");
-  document.querySelector(".b4").classList.add(".b5");
- 
+  for (let i = 0; i < 32; i++) {
+    document.querySelectorAll("." + "changc")[i].classList.toggle("change-background3");
+
+
+  }
+  document.querySelector("." + "skill-heading").classList.toggle("change-background2");
+  document.querySelector("." + "about-heading").classList.toggle("change-background2");
+  document.querySelector("." + "interesthead").classList.toggle("change-background2");
+  document.querySelector("." + "clubhead").classList.toggle("change-background2");
+  document.querySelector("." +"foote").classList.toggle("change-background2");
+  document.querySelector("." +"first-div").classList.toggle("first-div-change");
+
 })
+
 
