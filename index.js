@@ -112,8 +112,11 @@ document.querySelector(".b3").addEventListener("click", function () {
 
 
 document.querySelector(".b4").addEventListener("click", function () {
+  alert("Are you sure to change theme");
   var activeButton2 = document.querySelector("." + "b4");
   activeButton2.classList.toggle("b5");
+
+  
   document.querySelector("." + "boy").classList.toggle("change-background");
   document.querySelector("." + "maindiv-clubs").classList.toggle("change-background2");
   document.querySelector("." + "skillmain ").classList.toggle("change-background2");
