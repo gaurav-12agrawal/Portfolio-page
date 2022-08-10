@@ -513,13 +513,13 @@ h5 {
     border-width: 0.3px;
     border-style: solid;
     border-color: black;
-    transition: all 500ms ease-in 1ms;
+    transition: all 200ms ease-in 1ms;
 
 
 }
 
 .social-icons:hover {
-    font-size: 22px;
+    font-size: 20px;
     color: white;
     background-color: var(--orang) ;
     box-shadow: 1px;
@@ -604,7 +604,7 @@ h5 {
 .skill-number {
     font-size: 18px;
     margin-top: 30px;
-    margin-left: 20%;
+    margin-left: 10%;
     font-family: "Exo 2";
     font-weight: bold;
     transition: all 1s ease-in;
@@ -967,6 +967,7 @@ span {
 .rightiterest {
     width: 30%;
     margin: auto;
+    margin-top: 10%;
     height: 90%;
     transition: all 1s ease-in;
 
@@ -976,6 +977,7 @@ span {
     height: 25%;
     padding-top: 8px;
     padding-bottom: 10px;
+    margin: auto;
     justify-content: center;
     align-items: center;
     border-bottom: 2px;
@@ -1107,24 +1109,6 @@ span {
 
     }
 
-    .skillmain {
-        flex-direction: column;
-        height: 1050px;
-    }
-
-    .leftskill {
-
-        width: 100%;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .rightskill {
-        width: 100%;
-        margin-left: 0%;
-        margin-right: 2%;
-    }
 
     #clubs {
         height: 450px;
@@ -1175,7 +1159,9 @@ span {
         margin-left: 0;
         padding-top: 0px;
     }
-
+  .navbar-dark-color{
+    color: black;
+  }
     .first {
         width: 100%;
         text-align: center;
@@ -1208,6 +1194,7 @@ span {
    }
     .interest-tag {
         font-size: 18px;
+        margin-left: 2%;
 
     }
     .btn-chat{
@@ -1217,7 +1204,20 @@ span {
      background-repeat: repeat;
     }
 }
+.interest-image {
+    margin-top: 90px;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    transition: all 1s ease-in;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 
+}
+.skillmain{
+    height: 550px;
+}
 @media (max-width:510px) {
 
     .main-page {
@@ -1226,5 +1226,35 @@ span {
     }
 .bitmoji{
     padding-right: 50%;
+}
+}
+@media (max-width:750px) {
+.p1{
+    visibility: hidden;
+    display: none;
+}
+.p7{
+    visibility: hidden;
+    display: none;
+}
+.p6{
+    visibility: hidden;
+    display: none;
+}
+.p2{
+    visibility: hidden;
+    display: none;
+}
+.p3{
+    visibility: hidden;
+    display: none;
+}
+.p4{
+    visibility: hidden;
+    display: none;
+}
+.p5{
+    visibility: hidden;
+    display: none;
 }
 }
