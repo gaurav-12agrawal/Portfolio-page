@@ -557,6 +557,7 @@ h5 {
     color: white;
     border-radius: 12px;
     transition: all 1s ease-in;
+    
 
 }
 
@@ -592,12 +593,13 @@ h5 {
     margin-top: 50px;
     width: 50%;
     transition: all 1s ease-in;
+    margin-bottom: 10px;
 }
 
 .rightskill {
     width: 50%;
     margin-top: 50px;
-    margin-left: 15%;
+    margin-left: 5%;
     transition: all 1s ease-in;
 }
 
@@ -792,7 +794,20 @@ strong {
     transition: all 1s ease-in;
 
 }
-
+.skill-number{
+    margin-bottom: 10px;
+    margin-top: 55px;
+}
+.skill-n{
+    margin-top: 20px;
+}
+.margin{
+    margin-top: 50px;
+}
+.margin1{
+    margin-top: 28px;
+    
+}
 .my-image {
     height: 250px;
     width: 200px;
@@ -1215,9 +1230,7 @@ span {
     align-items: center;
 
 }
-.skillmain{
-    height: 550px;
-}
+
 @media (max-width:510px) {
 
     .main-page {
